@@ -1,2 +1,2 @@
-# Java
- 
+Este repositório é usado para armazenar exemplos e atividades sobre os diversos recursos da linguagem de programação Java, sendo usado em sua maioria a versão Java 8(Java 1.8).
+Desta forma todo o conteúdo apresentado pode ser usado como objeto de estudo para outros estudantes da linguagem ou de programação em geral.
