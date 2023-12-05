@@ -1,0 +1,43 @@
+package Atividades;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Atividade_2 {
+
+	public static void main(String[] args) {
+		try {
+		
+		String srt1, srt2;
+		
+		Map<String, String> map = new LinkedHashMap<String, String>();
+		Scanner s = new Scanner(System.in);
+		
+		for(int i = 0; i < 4; i++) {
+			System.out.println("Digite duas palavras: ");
+			srt1 = s.next();
+			srt2 = s.next();
+			
+			if(map.containsKey(srt1) || map.containsValue(srt2)) {
+				System.out.println("Não digite valores iguais. Tente novamente");
+				i--;
+			}
+			else {
+				map.put(srt1, srt2);
+			}
+		}
+		
+		for(Map.Entry<String, String> be : map.entrySet()) {
+			if(be.getKey().length() == be.getValue().length()) {
+				System.out.println("A palavra " + be.getKey() + " é tem o mesmo número de letras da palavra " + be.getValue());
+			}
+		}
+		s.close();
+		
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}
